@@ -13,6 +13,9 @@
   --light-pink-bg: #f49cc4;
   --green-blue: #2ced73;
   --light-blue: #7caadc;
+  --light-white: #faf7f7;
+  --shadow-clr: #4b4a4a8a;
+  --black-clr: #252525;
 }
 
 html {
@@ -27,6 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 }
 
 
@@ -34,5 +38,75 @@ body {
 .app {
   width: 100%;
   max-width: 650px;
+  background-color: var(--light-white);
+  padding: 1.8rem 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 3px 3px 5px var(--shadow-clr);
 }
+
+.app .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.app .container > div {
+  flex: 1 1 250px;
+}
+
+.app .container .form-section {
+  background-color: var(--light-orange-bg);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 3px 3px 5px var(--shadow-clr);
+}
+
+.container .form-section div {
+  margin: 1rem 0;
+  display: flex;
+  gap: .3rem;
+  flex-direction: column;
+}
+
+.container .form-section div label {
+  font-size: 0.9rem;
+}
+
+.container .form-section div input, 
+.container .form-section div textarea {
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  width: 100%;
+}
+
+.container .form-section div input {
+  height: 35px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--black-clr);
+  padding-left: .5rem
+}
+
+.container .form-section div textarea {
+  padding: .5rem;
+  min-height: 80px;
+}
+
+.container .form-section div .submit-btn {
+  display: block;
+  max-width: 120px;
+  height: 35px;
+  margin-top: .8rem;
+  border: none;
+  background-color: var(--light-white);
+  border-radius: 1rem;
+  i {
+    color: var(--light-blue);
+  }
+
+}
+
+
 /* full app */
