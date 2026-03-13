@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-orange-bg: #ffe372;
+  --light-red-bg: #f15b42;
+  --light-pink-bg: #f49cc4;
+  --green-blue: #2ced73;
+  --light-blue: #7caadc;
+}
 
 html {
   font-family: 'Poppins', sans-serif;
@@ -17,4 +24,15 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+/* full app */
+.app {
+  width: 100%;
+  max-width: 650px;
+}
+/* full app */
