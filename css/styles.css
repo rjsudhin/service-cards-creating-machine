@@ -70,6 +70,19 @@ body {
   font-size: 1rem;
 }
 
+.app .container .info-section #mail-icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  border-radius: .5rem;
+  color: var(--light-white);
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background: var(--black-clr);
+}
+
 .app .container .form-section {
   background-color: var(--light-orange-bg);
   padding: 1rem;
